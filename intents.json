@@ -1,0 +1,50 @@
+{"intents": [
+  {"tag": "greeting",
+  "patterns": ["Hi", "How are you", "Hello"],
+  "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"]
+},
+    {"tag": "TaxRate",
+      "patterns": ["VAT tax rate?", "At rate should I charge VAT on general goods?", " are zero rated goods?"],
+      "responses": ["The tax rate for all taxable goods and taxable services other than zero-rated supplies.",
+                    "The tax rate is 0% for specific supplies listed in the Second Schedule to the VAT Act, 2013, all other supplies are taxable at 16%."
+    ]
+    },
+    {"tag": "DueDate",
+      "patterns": ["due date for VAT?", "filing deadline?", "payment deadline", "When file the return?", "return due"],
+      "responses": ["VAT is due on or before the 20th day of the following month. This includes both the return and payment. Returns are submitted online via iTax (https://itax.kra.go.ke)."]
+    },
+    {"tag": "eTims",
+      "patterns": ["eTims?", "register for eTims", "TIMS Invoice"],
+      "responses": ["Every VAT registered taxpayer is required to on-board on eTIMS by signing up through https://etims.kra.go.ke and sending service request. Alternatively, taxpayers can visit any KRA Tax service office or eTIMS operation unit located at JKUAT building 8th floor, along Kenyatta Avenue to seek help.",
+                    "eTIMS (electronic Tax Invoice Management System) is a software solution that provides taxpayers with options for a simple, convenient and flexible approach to electronic invoicing."]
+    },
+    {"tag": "Input",
+      "patterns": ["input tax?", "how do i treat inputs"],
+      "responses": ["Input tax refers to a tax paid by a registered person on purchase of goods or services for the purpose of his business",
+                    "Registered persons are entitled to input tax deduction at the end of the tax period in which the taxable supply or importation occurred. ",
+                  "Input tax deduction is valid for only six months after the end of the tax period in which the supply  or importation occurred. "]
+    },
+    {"tag": "OutputTax",
+      "patterns": [" output tax?", "how do i treat outputs"],
+      "responses": ["Output tax refers to tax charged on the sales of taxable goods or services. Tax payable is the difference between the Output tax and the Input tax. "]
+    },
+    {"tag": "goodbye",
+    "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya"],
+    "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
+  },
+
+  {"tag": "Definition",
+  "patterns": ["Value Added Tax", "Define VAT", "VAT"],
+  "responses": ["VAT is an indirect tax that is paid by the person who consumes taxable goods and taxable services supplied in Kenya and/or imported into Kenya.",
+  "Any person supplying or who expects to supply taxable goods and taxable services with a value of Kshs 5 Million or more in a year is required to register for VAT. ",
+ "VAT works under the Input / Output Tax system. Output Tax – Input Tax = Tax Payable"]
+},
+{"tag": "Refund",
+"patterns": ["Can I get a Cash Refund?", "excess"],
+"responses": ["Any excess input tax is carried forward and deducted in the subsequent tax period or may be refunded to the taxpayer",
+              "if the excess input tax arises from 1.Making zero rated supplies, 2. tax withheld by appointed tax withholding agents or 3. taxable supplies made to an official aid funded project by a registered manufacturer approved by the Cabinet Secretary in accordance with the First Schedule." 
+]
+}
+
+  ]
+  }
